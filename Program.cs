@@ -22,7 +22,7 @@ namespace Legend_of_Edda_Pegasus_Extractor
                 int nameSize = br.ReadInt32();
                 int unknown = br.ReadInt32();
                 br.ReadBytes(16);
-                string name = new(br.ReadChars(nameSize));
+                string name = new(System.Text.Encoding.GetEncoding("ISO-8859-1").GetChars(br.ReadBytes(nameSize)));
                 br.ReadByte();
                 using FileStream FS = File.Create(Path.GetDirectoryName(args[0]) + "//" + Path.GetFileNameWithoutExtension(args[0]) + "//" + name);
                 BinaryWriter bw = new(FS);
