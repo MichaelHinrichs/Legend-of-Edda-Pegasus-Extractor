@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Written for games in the eSofnet engine.
+//Legend of Edda: Pegasus https://store.steampowered.com/app/2241570/
+//Luna Online: Reborn https://store.steampowered.com/app/457590/
 using System.IO;
 
 namespace Legend_of_Edda_Pegasus_Extractor
