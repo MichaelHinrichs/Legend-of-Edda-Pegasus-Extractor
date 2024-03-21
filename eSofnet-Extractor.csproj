@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Legend_of_Edda_Pegasus_Extractor</RootNamespace>
+    <RootNamespace>eSofnet_Extractor</RootNamespace>
   </PropertyGroup>
 
 </Project>

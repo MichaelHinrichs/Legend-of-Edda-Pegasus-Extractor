@@ -3,7 +3,7 @@
 //Luna Online: Reborn https://store.steampowered.com/app/457590/
 using System.IO;
 
-namespace Legend_of_Edda_Pegasus_Extractor
+namespace eSofnet_Extractor
 {
     class Program
     {

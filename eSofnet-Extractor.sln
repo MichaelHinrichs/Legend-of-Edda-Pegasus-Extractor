@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.34407.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Legend-of-Edda-Pegasus-Extractor", "Legend-of-Edda-Pegasus-Extractor.csproj", "{31543761-10F7-49C0-9D80-4EEEDA441658}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eSofnet-Extractor", "eSofnet-Extractor.csproj", "{31543761-10F7-49C0-9D80-4EEEDA441658}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
