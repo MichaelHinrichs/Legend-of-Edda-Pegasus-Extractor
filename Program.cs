@@ -1,7 +1,7 @@
 ﻿//Written for games in the eSofnet engine.
 //Legend of Edda: Pegasus https://store.steampowered.com/app/2241570/
 //Luna Online: Reborn https://store.steampowered.com/app/457590/
-//Super_Mecha_Champions: https://store.steampowered.com/app/1368910/
+//Super_Mecha_Champions https://store.steampowered.com/app/1368910/
 
 using System.IO;
 
