@@ -16,7 +16,8 @@ namespace eSofnet_Extractor
             br.ReadInt32();
             int filecount = br.ReadInt32();
             br.BaseStream.Position = 0x5c;
-            Directory.CreateDirectory(Path.GetDirectoryName(args[0]) + "//" + Path.GetFileNameWithoutExtension(args[0]));
+            string path = Path.GetDirectoryName(args[0]) + "//" + Path.GetFileNameWithoutExtension(args[0])
+            Directory.CreateDirectory(path);
             for (int i = 0; i < filecount; i++)
             {
                 int size = br.ReadInt32();
@@ -26,7 +27,7 @@ namespace eSofnet_Extractor
                 br.ReadBytes(16);
                 string name = new(System.Text.Encoding.GetEncoding("ISO-8859-1").GetChars(br.ReadBytes(nameSize)));
                 br.ReadByte();
-                BinaryWriter bw = new(File.Create(Path.GetDirectoryName(args[0]) + "//" + Path.GetFileNameWithoutExtension(args[0]) + "//" + name));
+                BinaryWriter bw = new(File.Create(path + "//" + name));
                 bw.Write(br.ReadBytes(fileSize));
                 bw.Close();
             }
