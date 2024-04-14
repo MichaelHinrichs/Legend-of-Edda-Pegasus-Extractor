@@ -26,8 +26,7 @@ namespace eSofnet_Extractor
                 br.ReadBytes(16);
                 string name = new(System.Text.Encoding.GetEncoding("ISO-8859-1").GetChars(br.ReadBytes(nameSize)));
                 br.ReadByte();
-                using FileStream FS = File.Create(Path.GetDirectoryName(args[0]) + "//" + Path.GetFileNameWithoutExtension(args[0]) + "//" + name);
-                BinaryWriter bw = new(FS);
+                BinaryWriter bw = new(File.Create(Path.GetDirectoryName(args[0]) + "//" + Path.GetFileNameWithoutExtension(args[0]) + "//" + name));
                 bw.Write(br.ReadBytes(fileSize));
                 bw.Close();
             }
