@@ -16,7 +16,7 @@ namespace eSofnet_Extractor
             br.ReadInt32();
             int filecount = br.ReadInt32();
             br.BaseStream.Position = 0x5c;
-            string path = Path.GetDirectoryName(args[0]) + "//" + Path.GetFileNameWithoutExtension(args[0])
+            string path = Path.GetDirectoryName(args[0]) + "//" + Path.GetFileNameWithoutExtension(args[0]);
             Directory.CreateDirectory(path);
             for (int i = 0; i < filecount; i++)
             {
